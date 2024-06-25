@@ -1,0 +1,221 @@
+<!--Student Name: Yui Hei Wong
+    File Name: Menu.html
+    Student Number: 041105962
+    Edit Date: 2024.Apr.01
+    Description: This page displays our menu items.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group8">
+        <link rel="stylesheet" href="../CSSFiles/Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Woopen Salad Bar - Menu</title> 
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <div class="header">
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="Salad logo" >
+            </div>
+
+            <div class="header-right">
+                <!-- Navigation -->
+                <a href="index.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="../PHPFile_Server/Order/Order.php">Order</a>
+                <a href="../PHPFile_Server/Contact/Conatct.php">Contact</a>
+                <a href="../PHPFile_Server/Register/Register.php" class="register">Register</a>
+            </div>
+        </div><hr>
+
+        <div class="menu">
+            <!-- Left_Category Bar -->
+            <div class="category">
+                <ul>
+                  <li><a href="#" data-category="all">All</a></li>
+                  <li><a href="#" data-category="Category 1">Main Salads</a></li>
+                  <li><a href="#" data-category="Category 2">Side Desserts</a></li>
+                  <li><a href="#" data-category="Category 3">Fresh Smoothies</a></li>
+                  <li><a href="#" data-category="Category 4">Specialty Drinks</a></li>
+                  <li><a href="#" data-category="Category 5">Coffee</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right_Items-->
+            <!-- Category 1-->
+            <div class="product-grid">
+                <div class="product" data-category="Category 1">
+                  <h3>Green Goddess Power Bowl:</h3><br>
+                  <p>Kale, mixed greens, avocado, chickpeas, roasted sweet potatoes, hemp seeds.</p>
+                  <p>Dressing: Green goddess dressing.</p>
+                  <p>Dietary Information: Vegan.</p>
+                </div>
+                <div class="product" data-category="Category 1">
+                  <h3>Asian Sesame Ginger Salad:</h3><br>
+                  <p>Kale, mixed greens, avocado, chickpeas, roasted sweet potatoes, hemp seeds.</p>
+                  <p>Dressing: Green goddess dressing.</p>
+                  <p>Dietary Information: Vegan.</p>
+                </div>
+                <div class="product" data-category="Category 1">
+                  <h3>Caprese Salad:</h3><br>
+                  <p>Fresh mozzarella, heirloom tomatoes, basil, balsamic glaze. </p>
+                  <p>Dressing: Extra virgin olive oil.</p>
+                  <p>Dietary Information: Vegetarian.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Strawberry Spinach Salad:</h3><br>
+                  <p>Baby spinach, fresh strawberries, candied pecans, red onion, avocado.</p>
+                  <p>Dressing:Balsamic vinaigrette.</p>
+                  <p>Dietary Information: Vegan.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Mexican Street Corn Salad:</h3><br>
+                  <p>Grilled corn, black beans, cherry tomatoes, red onion, cilantro.</p>
+                  <p>Dressing: Lime-chili dressing.</p>
+                  <p>Dietary Information: Vegan.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Grilled Chicken Caesar Salad:</h3><br>
+                  <p>Romaine lettuce, grilled chicken breast, cherry tomatoes, croutons, Parmesan cheese.</p>
+                  <p>Dressing: Classic Caesar dressing.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Shrimp and Avocado Cobb Salad:</h3><br>
+                  <p>Mixed greens, grilled shrimp, avocado, cherry tomatoes, hard-boiled eggs, bacon, blue cheese.</p>
+                  <p>Dressing: Red wine vinaigrette.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Steak and Blue Cheese Spinach Salad:</h3><br>
+                  <p>Baby spinach, grilled steak strips, red onion, cherry tomatoes, blue cheese, walnuts.</p>
+                  <p>Dressing: Balsamic vinaigrette.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Mediterranean Chicken and Orzo Salad:</h3><br>
+                  <p>Orzo pasta, grilled chicken, cherry tomatoes, Kalamata olives, feta cheese, cucumber.</p>
+                  <p>Dressing: Lemon oregano vinaigrette.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Citrus Glazed Shrimp and Quinoa Salad:</h3><br>
+                  <p>Quinoa, citrus-glazed shrimp, arugula, orange segments, avocado, pine nuts.</p>
+                  <p>Dressing: Citrus vinaigrette.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Tuna Nicoise Salad:</h3><br>
+                  <p>Mixed greens, seared tuna, cherry tomatoes, boiled potatoes, green beans, olives, hard-boiled eggs.</p>
+                  <p>Dressing: Dijon vinaigrette.</p>
+                </div>
+          
+                <div class="product" data-category="Category 1">
+                  <h3>Spicy Thai Beef Salad:</h3><br>
+                  <p>Sliced beef, mixed greens, cherry tomatoes, cucumber, red onion, peanuts.</p>
+                  <p>Dressing: Spicy Thai dressing.</p>
+                </div>
+
+                <!-- Side Desserts Section -->
+                <div class="product" data-category="Category 2">
+                  <h3>Chia Seed Pudding:</h3><br>
+                  <p>Chia seeds soaked in almond milk, topped with fresh berries and a drizzle of honey.</p>
+                  <p>Dietary Information: Vegetarian.</p>
+                </div>
+
+                <div class="product" data-category="Category 2">
+                  <h3>Greek Yogurt Parfait:</h3><br>
+                  <p>Greek yogurt, granola, mixed berries, and a touch of agave nectar.</p>
+                </div>
+
+                <div class="product" data-category="Category 2">
+                  <h3>Baked Apple Slices:</h3><br>
+                  <p>Sliced apples baked with a sprinkle of cinnamon, served with a dollop of Greek yogurt.</p>
+                </div>
+
+                <div class="product" data-category="Category 2">
+                  <h3>Dark Chocolate Avocado Mousse:</h3><br>
+                  <p>Creamy avocado and dark chocolate mousse, topped with a sprinkle of pistachios.</p>
+                </div>
+
+
+                <!-- Smoothies Section -->
+                <div class="product" data-category="Category 3">
+                  <h3>Tropical Bliss:</h3><br>
+                  <p>Pineapple, mango, banana, coconut water, and a hint of lime.</p>
+                </div>
+
+                <div class="product" data-category="Category 3">
+                  <h3>Berry Burst:</h3><br>
+                  <p>Mixed berries, spinach, almond milk, and Greek yogurt.</p>
+                </div>
+
+                <div class="product" data-category="Category 3">
+                  <h3>Green Goddess Smoothie:</h3><br>
+                  <p>Kale, cucumber, green apple, celery, and coconut water.</p>
+                </div>
+                
+                <!-- Special drinks Section -->
+                <div class="product" data-category="Category 4">
+                  <h3>Matcha Latte:</h3><br>
+                  <p>A shot of rich, intense espresso.</p>
+                </div>
+
+                <div class="product" data-category="Category 4">
+                  <h3>Turmeric Golden Milk:</h3><br>
+                  <p>Turmeric, ginger, cinnamon, honey, and almond milk.</p>
+                </div>
+
+                <div class="product" data-category="Category 4">
+                  <h3>Hibiscus Mint Iced Tea:</h3><br>
+                  <p>Hibiscus tea infused with fresh mint, served over ice.</p>
+                </div>
+                
+                <!-- Coffee Section -->
+                <div class="product" data-category="Category 5">
+                  <h3>Espresso:</h3><br>
+                  <p>A shot of rich, intense espresso.</p>
+                </div>
+
+                <div class="product" data-category="Category 5">
+                  <h3>Cappuccino:</h3><br>
+                  <p>Equal parts espresso, steamed milk, and foam.</p>
+                </div>
+
+                <div class="product" data-category="Category 5">
+                  <h3>Cold Brew:</h3><br>
+                  <p>Smooth, cold-brewed coffee served over ice.</p>
+                </div>
+            </div>  
+        </div>
+        
+
+        <!-- Contact Area -->
+        <div class = "contact">  
+            <p>Follow Us</p>
+            <div class="contact-icon">
+                <!-- social media icons-->
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Group8. All rights reserved.</p>
+        </footer>
+
+        <script src="../JScripts/Menu.js"></script>
+    </body>
+
+
+</html>

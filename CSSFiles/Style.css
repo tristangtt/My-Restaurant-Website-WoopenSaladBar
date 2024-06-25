@@ -1,0 +1,330 @@
+/*   Student Name: Hsin Tang, Yui Hei Wong, Jialing Liang
+     File Name: Style.css
+     Stuednt Number: 041111914, 041105962, 040784842
+     Edit Date: 2024.Apr.04
+     Description: This page use for decorate our pages. */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* END CSS Reset*/
+
+
+/*For whole pages. Title, header, footer.etc*/
+
+body {
+    background-image: url('../images/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Verdana, sans-serif
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px; 
+    border-radius: 50%; /* Let logo be circle.*/
+    margin-left: 20px;
+}
+
+.header-right a {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    text-decoration: none; /*no underline*/
+    margin: auto 30px;
+}
+
+
+hr {
+  border: 2px solid white;
+}
+
+.top-area {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+
+.top-area h1, .top-area h3{
+  font-weight: bold;
+  text-shadow: 0 0 0.2em gray;
+  word-spacing: 3px; /*Word and word has more space*/
+}
+
+.main-button {
+  color: white;
+  background-color: #6A3937;
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  color: white;
+  background-color: #9E5453;
+  text-decoration: underline;
+}
+
+.contact {
+  background-color: #6A3937;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  word-spacing: 8px; /*Word and word has more space*/
+  margin-top: 50px;
+}
+
+.contact-icon a {
+  display: inline-block;
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white;
+  width: 50px;
+  margin-top: 30px;
+}
+
+.contact-icon a:hover {
+  background-color:rgba(255, 255, 255, 0.2); /* Add a hover color */
+}
+
+footer{
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
+
+
+/*For index.html*/
+.ourStory{
+  background-color:#ECEFF7;
+  margin: 20px auto;
+  padding: 30px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 150px auto;
+}
+
+.tip {
+  width: 25%;
+  margin: 10px; 
+  text-align: center; 
+}
+
+.tip img {
+  width: 100%;
+  border-radius: 30px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a shadow */
+  transition: transform 0.3s ease-in-out; /* Add transition for hover effects */
+}
+
+.tip:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
+.tip p{
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 0 0 0.2em gray;
+}
+
+
+/* For Menu.html*/
+.menu {
+  display: flex;
+  padding: 20px;
+}
+
+.category {
+  display: flex;
+  position: fixed;
+  width: 200px;
+  padding: 20px;
+  background-color: #6A3937;
+  color: white;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.category li {
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.category li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.category li a:visited {
+  color: white;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px; /*Keep the product area from being covered by categories*/
+  padding: 40px;
+}
+
+.product {
+  width: 100%;
+  background-color: #ECEFF7;
+  margin: 20px 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/*For Contact.php & Register.php*/
+.container {
+  max-width: 70%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button, #Submit, #Reset{
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #78aa54; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #78aa54; 
+}
+
+.error-message {
+  color: #d9534f; /* Red color for error messages */
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/*For Order.php*/
+.finditem {
+  background-color: #ECEFF7;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-size: 16px;
+}
+
+.finditem label {
+  margin-right: 10px;
+}
+
+.filter select {
+  padding: 5px;
+}
+
+.filter {
+  margin-left: 20px;
+}
+
+.search {
+  margin-right: 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 8px 15px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search button {
+  margin-left: 30px; 
+  background-color: #78aa54;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 75% 15%;
+  margin: 30px;
+}
+
+#menu-container {
+  background-color: aliceblue;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#cart-container {
+  background-color: wheat;
+  padding: 10px;
+  width: 100%;
+  margin-left: 30px;
+}
